@@ -1,3 +1,3 @@
-##HTML/CSS/JAVASCRIPT Practice Projects!
+## HTML/CSS/JAVASCRIPT Practice Projects!
 
 Using electron to run!
