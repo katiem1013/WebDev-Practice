@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator!</title>
+        <link href="CSS/calculator.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="titlebar">Calculator! 
+            <button id="close-button" class="close-button">
+            </button>
+        </div>
+        <div class="app-border">
+            <A href="index.html"><img src="Assets/BackButton.png" alt="Back Button" width="50" height="50"/></A>
+            <h1>Calculator:</h1>
+            <div class="container">
+                <div class="calculator">
+                    <form>
+                        <div class="display">
+                            <input type="text" name="display" readonly>
+                        </div>
+                        <div>
+                            <input type="button" value="AC" onclick="display.value = ''" class="operator button">
+                            <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)" class="operator button">
+                            <input type="button" value="." onclick="display.value += '.'" class="operator symbols button">
+                            <input type="button" value="/" onclick="display.value += '/'" class="operator symbols button">
+                        </div>
+
+                         <div>
+                            <input type="button" value="7" onclick="display.value += '7'" class = "button">
+                            <input type="button" value="8" onclick="display.value += '8'" class = "button">
+                            <input type="button" value="9" onclick="display.value += '9'" class = "button">
+                            <input type="button" value="*" onclick="display.value += '*'" class="operator symbols button">
+                        </div>
+
+                        <div>
+                            <input type="button" value="4" onclick="display.value += '4'" class = "button">
+                            <input type="button" value="5" onclick="display.value += '5'" class = "button">
+                            <input type="button" value="6" onclick="display.value += '6'" class = "button">
+                            <input type="button" value="-" onclick="display.value += '-'" class="operator symbols button">
+                        </div>
+
+                        <div>
+                            <input type="button" value="1" onclick="display.value += '1'" class = "button">
+                            <input type="button" value="2" onclick="display.value += '2'" class = "button">
+                            <input type="button" value="3" onclick="display.value += '3'" class = "button">
+                            <input type="button" value="+" onclick="display.value += '+'" class="operator symbols button">
+                        </div>
+
+                        <div>
+                            <input type="button" value="00" onclick="display.value += '00'" class = "button">
+                            <input type="button" value="0" onclick="display.value += '0'" class = "button">
+                            <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal operator symbols button">
+                        </div>
+                    </form>
+                </div>
+            </div>  
+
+        </div>
+
+        <script src = "JavaScripts/calculator.js"></script>
+        
+    </body>
+<html>

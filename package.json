@@ -1,0 +1,19 @@
+{
+  "name": "newprojects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^37.4.0"
+  },
+  "dependencies": {
+    "electron-settings": "^4.0.4",
+    "electron-store": "^10.1.0"
+  }
+}

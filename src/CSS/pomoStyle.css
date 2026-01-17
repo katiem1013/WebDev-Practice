@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "Boleh";
+    src: url("../Assets/Fonts/Bolehs.ttf");
+}
+
+*{
+    font-family: "Boleh", serif;
+    color:#2d2d25;
+}
+
+.close-button{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    cursor: pointer;
+    background-image: url("../Assets/Close.png");
+    background-position: center;
+    background-size: 35px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box; 
+    background-image: url("../Assets/Backgrounds/Background.png");
+    background-size: 800px, 800px;
+}
+
+.app-border{
+    border: 10px solid #7C9464; 
+    padding: 10px; 
+    min-height: 90vh;
+    outline: 3px #58733C solid;
+    outline-offset: -12px;
+}
+
+.titlebar {
+    -webkit-app-region: drag;
+    user-select: none;
+
+    display: flex;
+    height: 40px;
+    width: calc(100% );
+    align-items: last baseline;
+    justify-content: center;
+    background: #7C9464;
+
+    font-size: 25px;
+}
+
+.pomo-timer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pomo-timer-buttons{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 540px;
+    margin: 10px auto 10px;
+    padding: 10px 10px 10px; 
+    
+}
+
+.img-with-text{
+  display:inline-block;
+  margin-right: 20px;
+  font-size:20px;
+  text-align:center;
+  text-decoration:none;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.timer-buttons{
+    display: flex;
+    column-gap: 25px;
+    margin-bottom: 10px;
+}
+
+.timer-btn{
+    display: block;
+    width: 100;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 30px 10px;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    transition: box-shadow 0.2s ease-in-out;
+    user-select: none;
+    cursor: pointer;
+
+    outline: 3px #58733C solid;
+    background-color: #B1B78B;
+    color: #202020;
+    
+    box-shadow: 7px 7px 0px 0px #CC9922;
+    position: relative;
+}
+
+.timer-btn:hover,
+.timer-btn:active{
+     background: #b9cac3;
+}
+
+
+.circle{
+    position: relative;
+    width: 350px;
+    aspect-ratio: 1/1;
+    border: 3px dotted;
+    border-radius: 50%;
+    background-color: #e2d1bc;
+}
+
+.inner-circle{
+    position: absolute;
+    inset: 2%;
+    width: 96;
+    height: 96;
+    border-radius: 50%;
+    outline: 3px #2d2d25 solid;
+}
+
+.countdown{
+    position: absolute;
+    inset: 0;
+    width: 94%;
+    height: 94%;
+    border-radius: inherit;
+    
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown h1{
+    font-size: 4rem;
+    z-index: 5;
+}
+
+.play-pause{
+    font-size: 2rem;
+    margin-top: 10px;
+    user-select: none;
+    cursor: pointer;
+}

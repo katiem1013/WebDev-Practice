@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "Boleh";
+    src: url("../Assets/Fonts/Bolehs.ttf");
+}
+
+*{
+    font-family: "Boleh", serif;
+    color:#2d2d25;
+}
+
+
+.close-button{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    cursor: pointer;
+    background-image: url("../Assets/Close.png");
+    background-position: center;
+    background-size: 35px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box; 
+    background-image: url("../Assets/Backgrounds/Background.png");
+    background-size: 800px, 800px;
+}
+
+.app-border{
+    border: 10px solid #7C9464; 
+    padding: 10px; 
+    min-height: 90vh;
+    outline: 3px #58733C solid;
+    outline-offset: -12px;
+}
+
+.titlebar {
+    -webkit-app-region: drag;
+    user-select: none;
+
+    display: flex;
+    height: 40px;
+    width: calc(100% );
+    align-items: last baseline;
+    justify-content: center;
+    background: #7C9464;
+
+    font-size: 25px;
+}
+
+.container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.button-boarders{
+    display: inline-block;
+    margin: auto;
+    background-color: #B1B78B;
+    padding: 8px;
+    border:3px #58733C solid;
+    border-radius: 10px;
+    box-shadow: 7px 7px 0px 0px #CC9922;
+    position: relative;
+    display: inline-block;
+}
+
+.img-with-text{
+  display:inline-block;
+  margin-right: 20px;
+  font-size:20px;
+  text-align:center;
+  text-decoration:none;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.app-border{
+    border: 10px solid #7C9464; 
+    padding: 10px; 
+    min-height: 90vh;
+    outline: 3px #58733C solid;
+    outline-offset: -12px;
+}
+
+.calculator{
+    background:#7C9464;
+    padding: 10px;
+    outline: 3px #58733C solid;
+    border-radius: 5px;
+    box-shadow: 7px 7px 0px 0px #CC9922;
+}
+
+.calculator form input{
+    border: 3px #58733C solid;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0px 0px #698151;
+    margin: 10px;
+    background-color: #B1B78B;
+    font-size: 30px;
+    color: #2d2d25;
+    cursor: pointer;
+}
+
+.button:hover
+{
+    background-color: #9fa576;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+}
+
+form input.equal{
+    width:145px;
+}
+
+form input.operator{
+    color: #af4f3e;
+}
+
+form input.symbols{
+    font-size: 35px;
+}

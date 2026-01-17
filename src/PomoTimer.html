@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pomo Timer!</title>
+        <link href="CSS/pomoStyle.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="titlebar">Pomo Timer!
+            <button id="close-button" class="close-button">
+            </button>
+        </div>
+        <div class="app-border">
+            <A href="index.html"><img src="Assets/BackButton.png" alt="Back Button" width="50" height="50"/></A>
+            <div class = "pomo-timer">
+            <h1>Pomo Timer:</h1>
+
+            <div class = "pomo-timer-buttons">
+                <div class ="timer-buttons">
+                        <button class = "timer-btn pomodoro active" data-time = "1500">Work!</button>
+                        <button class = "timer-btn short-break" data-time = "300">Short Break!</button>
+                        <button class = "timer-btn long-break" data-time= "900">Long Break!</button>
+                </div>
+            </div>
+
+        
+            <div class = "circle">
+                <div class = "inner-circle">
+                    <div class = "countdown">
+                        <h1></h1>
+                        <p class = "play-pause"></p>
+                    </div> 
+                </div> 
+            </div>
+            </div>
+            <script src = "JavaScripts/pomoScript.js"></script>
+        </div>
+    </body>
+<html>
