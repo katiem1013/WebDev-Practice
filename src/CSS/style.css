@@ -19,8 +19,9 @@
     background-position: center;
     background-size: 35px;
 
-   margin:top;
-   z-index: 1000;
+    -webkit-app-region: no-drag; /* CRITICAL: Allows clicks to work */
+    pointer-events: auto;
+    z-index: 9999;
     
 }
 
@@ -37,17 +38,16 @@ body {
 }
 
 .app-border{
-    pointer-events: none;
     border: 10px solid #7C9464; 
     padding: 10px; 
     min-height: 90vh;
     outline: 3px #58733C solid;
     outline-offset: -12px;
+    z-index: 0;
 }
 
 .titlebar {
     -webkit-app-region: drag;
-    user-select: none;
     pointer-events: none;
 
     display: flex;
@@ -58,8 +58,9 @@ body {
     background: #7C9464;
 
     font-size: 25px;
-    z-index: 0;
+    z-index: -1;
 }
+
 .container {
 
   height: 200px;

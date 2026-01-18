@@ -9,6 +9,8 @@ const createWindow = () => {
 
     resizable:false,
     frame:false,
+    titleBarOverlay: false,
+    titleBarStyle: 'hidden',
     
 
     webPreferences: {
